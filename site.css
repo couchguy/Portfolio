@@ -1,0 +1,68 @@
+body{
+	padding-top: 200px;
+	position: relative;
+}
+
+#header {
+	width: 100%;
+	position:fixed;
+	padding-top: 3%;
+	top: 0;
+	background-color: #FFFFFF;
+	z-index: 9999;
+}
+
+hr {
+	margin-bottom:0;
+}
+
+.nav {
+	margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.sections {
+	padding: 50px 0;
+}
+.row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.img {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.modal{
+	z-index: 99999;
+	color: #000000;
+}
+.bg-primary a,
+.bg-primary a:hover,
+.bg-primary a:active, 
+.bg-primary a:visited
+{
+	color: #FFFFFF;
+}
+
+.bg-primary a:hover,
+.bg-primary a:active
+{
+	opacity: .5;
+}
+.bio {
+	font-size: 17px;
+}
+.img-padding {
+	padding-right: 20px;
+}
+.img-tech {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.spacer{
+	margin-top:40px;
+}
+.img-modal {
+	max-height:500px;
+}

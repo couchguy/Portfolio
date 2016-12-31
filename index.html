@@ -1,302 +1,702 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Daniel Kass's Portfolio and Resume">
-		<meta name="author" content="Daniel Kass">
-		<meta name="keywords" content="Daniel, Daniel Kass, Milwaukee, Dan Kass, Dan, Kass Milwaukee, Computer, Engineering, Computer Engineering, Kass Computer Service">
-		
-		<link rel="icon" href="favicon.ico">
-		
-		<title>Daniel Kass</title>
-		
-		<!-- Bootstrap core CSS -->
-		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-		
-		<!-- Custom styles for this template -->
-		<link href="carousel.css" rel="stylesheet">	
-	</head>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Daniel Kass's Portfolio and Resume">
+    <meta name="author" content="Daniel Kass">
+    <meta name="keywords" content="Daniel, Daniel Kass, Milwaukee, Dan Kass, Dan, Kass Milwaukee, Computer, Engineering, Computer Engineering">
+    <link rel="icon" href="favicon.ico">
 
-	<body>
-		<!-- ===================== NAVBAR ===================== -->
-		<div class="navbar-wrapper">
-			<div class="container">
-				<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-					<div class="container">
-						<div class="navbar-header">            
-							<a class="navbar-brand" href="#"><img src="img/kasslogo.png" height="40px" width="40px" style="margin-top:-10px"></a>
-							<a class="navbar-brand" href="#">Daniel Kass</a>
+    <title>Daniel Kass</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="site.css" rel="stylesheet">
+	
+	<!-- Custom Fonts -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.css" rel="stylesheet" type="text/css">
+		
+  </head>
+  <body data-spy="scroll" data-target="#navbar" data-offset="200">
+    <!-- NAVBAR ================================================== -->
+	<div id="header" class="container">
+		<div class="col-xs-12">
+			<div class="col-lg-6">
+				<a href="#"><h1 class="text-center">Daniel Kass</h1></a>
+			</div>
+			<div id="navbar" class="navbar col-lg-6 hidden-xs hidden-md">
+				<ul class="nav nav-pills nav-justified">
+					<li role="presentation"><a href="#about">About</a></li>
+					<li role="presentation"><a href="#freelancing">Freelancing</a></li>
+					<li role="presentation"><a href="#resume">Resume</a></li>
+					<li role="presentation"><a href="#homebrewing">Home Brewing</a></li>
+					<li role="presentation"><a href="#contact">Contact</a></li>
+				</ul>
+			</div>	
+		</div>
+	</div>
+		
+	<div id="about" class="sections">
+		<div class="container-fluid">
+			<div class="col-lg-5 col-lg-offset-1">
+				<img class="img img-circle img-responsive center-block" src="img/kass.jpg" alt="Dan Kass">
+			</div>
+			<div class="col-lg-5 bio">
+				<p>Hi, my name is Dan Kass and I'm currently an Applications Development Engineer for CBRE. I am passionate working with new techonlogies and learning new skills.</p>
+				
+				<p>During day job I'm part of a team of engineers that analyzes on Building Data Analytics. We take commercial buildings; from retail stores to Sskyscrapers, HVAC data and bring it 
+				into an application called <a href="https://skyfoundry.com/skyspark/" target="_blank">SkySpark</a>.We analyze the data to point out innefficienceis and help our customers save energy.</p>
+				
+				<p>On the side, I'm a freelance web developer designing and building sites like this one, blogs, and business websites. Check out out <a href="http://basicbookblog.com" target="_blank">Basic Book Blog</a>! 
+				I cam also help with getting domain names and hosting websites. I use Google Domains and Amazon Web Services respectively.</p>
+				
+				<p>My favorite hobby is home brewing beer. It's a great hobby that has so many different aspects involved. I get to do hands-on DIY projects; when it comes to the brewing equipment, and  
+				chemistry when it comes the brewing itself. I'm much better at brewing chemistry now than I ever was in school. Expermineting with different ingredients is also blast! It's crazy how 
+				changing something small can have a big affect on the beer. Having good beer is just an added bonus to everything else included in the hobby.</p>
+			</div>
+		</div>
+	</div>
+	
+	<div id="freelancing" class="sections bg-primary">
+		<div class="container-fluid">
+			<h1 class="text-center">Freelancing</h1>
+			<h3 class="text-center">Couchguy Labs</h3>
+			<div class="row text-center">
+				<div class="col-lg-10 col-lg-offset-1">
+					<div class="col-md-4 col-sm-6">
+						<div class="service-item">
+							<span class="fa-stack fa-4x">
+								<i class="fa fa-circle fa-stack-2x"></i>
+								<i class="fa fa-code fa-stack-1x text-primary"></i>
+							</span>
+							<h4>
+								<strong>Web Design</strong>
+							</h4>
+							<p>I want to create you a simple great looking website for your customers to get the infromation they need quickly. I focus on small business and personal websites. Contact me if you are looking for a new site or simply just want to update your current one!</p>
 						</div>
-						<div id="navbar" class="navbar-collapse collapse">
-							<ul class="nav navbar-nav">
-								<li class="active"><a href="#">Home</a></li>
-								<li><a href="#about">About Me</a></li>
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Projects <span class="caret"></span></a>
-									<ul class="dropdown-menu" role="menu">
-										<!-- Websites -->
-										<li class="dropdown-header">Websites</li>
-										<li><a href="#computer">Kass Computer Services</a></li>
-										<li><a href="#studyAbroad">Study Abroad Photo Gallery</a></li>
-										<li><a href="#usaControls">USA Controls</a></li>
-										<li><a href="#hangman">Hangman</a></li>
-										<li><a href="#couchguy">Couchguy Brewing</a></li>
-										<li><a href="#skylark">Skylark Vending</a></li>										
-										<li class="divider"></li>					
-										<!-- Electronics -->
-										<li class="dropdown-header">Electronics</li>
-										<li><a href="#chess">Electronic Chess Board</a></li>
-										<li><a href="#tracker">Camera Tracker</a></li>										
-										<li class="divider"></li>
-										<!-- Misc -->
-										<li class="dropdown-header">Other</li>
-										<li><a href="#printrbot">3D Printer</a></li>
-									</ul>
-								</li>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="service-item">
+							<span class="fa-stack fa-4x">
+								<i class="fa fa-circle fa-stack-2x"></i>
+								<i class="fa fa-envelope fa-stack-1x text-primary"></i>
+							</span>
+							<h4>
+								<strong>Email</strong>
+							</h4>
+							<p>With that shiny new website you aren't going to want to use that old .gmail or your internet's email adress any longer. I can set you up with your own custom emails from your domain. Looking professional for your customers is key!</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="service-item">
+							<span class="fa-stack fa-4x">
+								<i class="fa fa-circle fa-stack-2x"></i>
+								<i class="fa fa-cloud fa-stack-1x text-primary"></i>
+							</span>
+							<h4>
+								<strong>Hosting</strong>
+							</h4>
+							<p>Finding a hosting company is a hassle, there are so many options out there. Let me take care of that for you! I will either host it on my Amazon Server or find the best provider for the site.</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-md-offset-4 col-sm-6">
+						<div class="service-item">
+							<span class="fa-stack fa-4x">
+								<i class="fa fa-circle fa-stack-2x"></i>
+								<i class="fa fa-laptop fa-stack-1x text-primary"></i>
+							</span>
+							<h4>
+								<strong>Computers</strong>
+							</h4>
+							<p>Need a new computer for your office or home? Have no idea what you should get? Talk with me, I can help as much as little or as you would like: give some recommondations to buying the computer, setting it up, training you on new software. What ever you need to run your business or life more smoothly.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row text-center">
+				<h2>Project Samples</h2>
+				<div class="spacer"></div>
+				<!-- SKYLARK -->
+				<div class="col-md-4">
+					<a data-toggle="modal" data-target="#skylarkModal">
+						<img class="img img-circle" src="img/skylark.jpg" alt="Skylark">
+						<h3>Skylark Automatic Vending</h3>
+					</a>
+				</div>
+				<!-- SkyLark Modal -->
+				<div class="modal fade" id="skylarkModal" tabindex="-1" role="dialog" aria-labelledby="skylarkModalLabel">
+					<div class="modal-dialog modal-lg" role="document">
+						<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="myModalLabel">Skylark Automatic Vending</h4>
+						</div>
+						<div class="modal-body">
+							<p>Skylark is a family owned vending service company here in Milwaukee. They have been serving the community for over 60 years! I host and maintain their website and company emails for them as they transfer into the 21<sup>st</sup> Century.</p>
+							<img class="img img-responsive img-modal center-block" src="img/skylarkSite.png" alt="Skylark">
+						</div>
+						<div class="modal-footer">
+							<a href="http://skylarkvending.com" target="blank"><button type="button" class="btn btn-default">View Site</button></a>
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+						</div>
+					</div>
+				</div>
+				<!-- BASIC BOOK BLOG -->
+				<div class="col-md-4">
+					<a data-toggle="modal" data-target="#basicBookBlogModal">
+						<img class="img img-circle" src="img/basicbookblog.jpg" alt="BasicBookBlog">
+						<h3>Basic Book Blog</h3>
+					</a>
+				</div>
+				<!-- Basic Book Modal -->
+				<div class="modal fade" id="basicBookBlogModal" tabindex="-1" role="dialog" aria-labelledby="basicBookBlogModalLabel">
+					<div class="modal-dialog modal-lg" role="document">
+						<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="myModalLabel">Basic Book Blog</h4>
+						</div>
+						<div class="modal-body">
+							<p>Basic Book Blog is a book review site. It's recommondations or good for regular people and book lovers alike! I moved BasicBookBlog from Bogger over to Ghost and changed a custom theme to work perfectly. I host and maintain the technical details of the site on my AWS server.</p>
+							<img class="img img-responsive img-modal center-block" src="img/bbbSite.png" alt="BasicBookBlog">
+						</div>
+						<div class="modal-footer">
+							<a href="http://basicbookblog.com" target="blank"><button type="button" class="btn btn-default">View Site</button></a>
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+						</div>
+					</div>
+				</div>			
+				<!-- FEBCO INC -->
+				<div class="col-md-4">
+					<a data-toggle="modal" data-target="#febcoModal">
+						<img class="img img-circle" src="img/febco.jpg" alt="Febco">
+						<h3>Febco Inc.</h3>
+					</a>
+				</div>
+				<!-- Febco Modal -->
+				<div class="modal fade" id="febcoModal" tabindex="-1" role="dialog" aria-labelledby="febcoModalLabel">
+					<div class="modal-dialog modal-lg" role="document">
+						<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="myModalLabel">Febco, Inc</h4>
+						</div>
+						<div class="modal-body">
+							<p>Febco, Inc. is a local refergeration company here in Milwaukee. I created this webstie to show off what they do and can do for their customers. This site is hosted by another provider (Host 360).</p>
+							<img class="img img-responsive img-modal center-block" src="img/febcoSite.png" alt="Febco">
+						</div>
+						<div class="modal-footer">
+							<a href="http://febcoinc.net" target="blank"><button type="button" class="btn btn-default">View Site</button></a>
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="resume" class="sections">
+		<div class="container">
+			<h1 class="text-center">Dan's Resume</h1>
+			<div class="col-lg-12">
+				<div class="row text-center">
+					<h2>Objective</h2>
+					<p class="lead">To work toward efficient, appropriate technology to help develop simple solutions to everyday problems.</p>
+				</div>
+				<div class="spacer"></div>
+				<div class="row">
+					<div class="col-lg-5 col-lg-offset-1 col-xs-12">
+						<a href="https://www.msoe.edu" target="_blank"><img src="img/msoe.jpg" class="pull-left img-padding"></a>
+						<p>Bachelors of Science in Computer Engineering<br>
+						<strong>Milwaukee School of Engineering (MSOE)</strong><br>
+						Graduated: May 2014</p>
+					</div>
+					<div class="spacer visible-xs col-xs-12"></div>
+					<div class="col-lg-5 col-xs-12">
+						<a href="https://www.cvut.cz/en" target="_blank"><img src="img/cvut.jpg" class="pull-left img-padding"></a>
+						<p>Study Abroad Participant<br>
+						<strong>Czech Technical Universtiy in Prague</strong></p>
+					</div>
+				</div>
+				<div class="spacer"></div>
+				<div class="row">
+					<div class="col-lg-4 col-xs-12 row">
+						<a href="http://triangle.org" target="_blank"><img src="img/triangle.jpg" class="pull-left img-padding"></a>
+						<p><strong>MSOE Chapter<br>of<br>Triangle Fraternity</strong></p>
+					</div>
+					<div class="col-lg-4 col-xs-12 row">
+						<a href="http://milwaukeehabitat.org/volunteer/habitat-young-professionals/" target="_blank"><img src="img/hyp.jpg" class="pull-left img-padding"></a>
+						<p><strong>Habitat for Humanity<br>Young Professionals<br>(HYP)</strong></p>
+					</div>
+					<div class="col-lg-4 col-xs-12 row">
+						<a href="http://www.ieee.org" target="_blank"><img src="img/ieee.png" class="pull-left img-padding"></a>
+						<p><strong>Institute of Electrical and Electronics Engineers (IEEE)</strong></p>
+					</div>
+				</div>
+				<div class="spacer"></div>
+				<div class="row text-center">
+					<h2>Proficient Technologies</h2>
+					<div class="spacer"></div>
+					<img src="img/office.png" class="center-mobile img-tech">
+					<img src="img/csharp.png" class="center-mobile img-tech">
+					<img src="img/html5-css3-js.png" class="center-mobile img-tech">
+					<img src="img/sql.png" class="center-mobile img-tech">
+					<img src="img/node.png" class="center-mobile img-tech">
+					<img src="img/git.png" class="center-mobile img-tech">
+					<img src="img/linux.png" class="center-mobile img-tech">
+					<img src="img/skyspark.jpg" class="center-mobile img-tech">
+				</div>
+				<div class="spacer"></div>
+				<div class="row">
+					<h2 class="text-center">Work Experience</h2>
+					<div class="spacer"></div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="text-center">
+								<a href="https://www.thinkesi.com/" target="_blank"><img src="img/cbreesi.png" class="img-responsive center-block img-tech"></a>
+								<p class="lead">Applications Development Engineer</p>
+								<p>Brookfield, WI - August 2015 to Present</p>							
+							</div>							
+							<ul>
+								<li>Part of a 4-person team responsible for the implementation of advanced building analytics software (SkySpark) using the Fantom and Axon programming languages.</li>
+								<li>Building applications for SkySpark to improve our customer's experience and to streamline the process for other teams inside CBRE|ESI.</li>
+								<li>Training end users on the SkySpark Application and CBRE's custom Applications.</li>
+								<li>Transitioning the software development process to be Agile using JIRA.</li>
+								<li>Skyspark Essentials Certified.</li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<div class="text-center">
+								<a href="https://www.fisglobal.com/" target="_blank"><img src="img/fis.png" class="img-responsive center-block img-tech"></a>
+								<p class="lead">Programmer / Analyis I</p>
+								<p>Milwaukee, WI - May 2014 to August 2015</p>
+							</div>
+							<ul>
+								<li>Investigated production issues that arise while on-call.</li>
+								<li>Part of a team that was responsible for a complete redesign of a data entry system.</li>
+								<li>Utilized web frameworks such as: ASP.NET, MVC.NET, and AngularJS.</li>
+								<li>Worked on a Scrum Team to add the functionality to fund PeoplePay payments with a debit card.</li>
 							</ul>
 						</div>
 					</div>
-				</nav>
+					<div class="spacer"></div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="text-center">
+								<a href="https://brasslightgallery.com" target="_blank"><img src="img/blg.jpg" class="img-responsive center-block img-tech"></a>
+								<p class="lead">IT and Marketing Intern</p>
+								<p>Milwaukee, WI - March 2013 to March 2014</p>
+							</div>
+							<ul>
+								<li>Created a PHP/MySQL web application to keep track of light fixture part iterations and drawings.</li>
+								<li>Responsible for web maintenance of an ecommerce site.</li>
+								<li>Worked with Databases in Microsoft Access and MySQL.</li>
+								<li>Interpreted old versions of the website to update to JavaScript and other web languages.</li>
+								<li>Accurate note taking on projects for review.</li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<div class="text-center">
+								<a href="https://pltwwi.org" target="_blank"><img src="img/pltw.png" class="img-responsive center-block img-padding img-tech"></a>
+								<p class="lead">Program Assistant</p>
+								<p>Milwaukee, WI - April 2011 to January 2013</p>
+							</div>
+							<ul>
+								<li>Responsible for entering personal confidential data into Jenzabar.</li>
+								<li>Entered PLTW affiliated school district/teacher data into Salesforce.</li>
+								<li>Prepared classrooms and materials for teacher training courses.</li>
+								<li>Created new process for creation and distribution of invoices.</li>
+							</ul>							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="text-center">
+				<a href="DanielKass.pdf" target="_blank"><button class="btn btn-primary">Get the PDF</button></a>
 			</div>
 		</div>
-
-		<!-- ===================== Carousel ===================== -->
-		<div id="myCarousel" class="carousel slide" data-ride="carousel">
-			<!-- Indicators -->
-			<ol class="carousel-indicators">
-				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				<li data-target="#myCarousel" data-slide-to="1"></li>
-				<li data-target="#myCarousel" data-slide-to="2"></li>
-			</ol>
-			<div class="carousel-inner" role="listbox">
-				<div class="item active">
-					<img src="img/prague.jpg" alt="First slide">
-					<div class="container">
-						<div class="carousel-caption">
-							<h1>My Portfolio</h1>
-							<p>Welcome to my portfolio. Please explore my projects. I hope you enjoy them.</p>
-							<p>&nbsp;</p>
-							<p>&nbsp;</p>
+	</div>
+	
+	<div id="homebrewing" class="sections bg-primary">
+		<div class="container">
+			<h1 class="text-center">Home Brewing</h1>
+			<div class="spacer"></div>
+			<div class="text-center">
+				<div class="col-lg-12">
+					<img class="img img-responsive img-rounded center-block" src="img/couchguybrewing.jpg" alt="Couchguy Brewing">
+					<div class="row text-center">
+						<div class="spacer"></div>
+						<!-- EQUIPMENT -->
+						<div class="col-md-4">
+							<a data-toggle="modal" data-target="#equipModal">
+								<img class="img img-rounded" src="img/equipment.jpg" alt="Equipment">
+								<h3>Brewing Equipment</h3>
+							</a>
 						</div>
-					</div>
-				</div>
-				<div class="item">
-					<img src="img/chess.jpg" alt="Second slide">
-					<div class="container">
-						<div class="carousel-caption">
-							<h1>Featured Project</h1>
-							<p>My Senior Design Project was an Electronic Chess board.  The board allowed you to play a computer on a physical board.</p>
-							<p><a class="btn btn-lg btn-primary" href="#chess" role="button">Learn more</a></p>
+						<!-- Equipment Modal -->
+						<div class="modal fade" id="equipModal" tabindex="-1" role="dialog" aria-labelledby="equipModalLabel">
+							<div class="modal-dialog modal-lg" role="document">
+								<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									<h4 class="modal-title" id="myModalLabel">Equipment</h4>
+								</div>
+								<div class="modal-body">
+									<div class="container-fluid">
+										<div class="col-lg-4">
+											<img class="img img-responsive img-modal center-block" src="img/yeast.png" alt="Equipment">
+											<p>This is the erlenmeyer flask that I use to create yeast starters. I over create my yeast starters and save some for the next time I brew with that strain.</p>
+										</div>
+										<div class="col-lg-4">
+											<img class="img img-responsive img-modal center-block" src="img/brewkettle.jpg" alt="Equipment">
+											<p>I currently use a 5 gallon stock pot that I added an electric heating element to. It allows me to boil 3 gallons of water in about a half hour.</p>
+										</div>										
+										<div class="col-lg-4">
+											<img class="img img-responsive img-modal center-block" src="img/carboy.png" alt="Equipment">
+											<p>I one 6 gallon carboy like in the picture, two 5 gallon carboys, and one 6.5 gallon bucket for fermenting. I'm looking into the PET plastic fermentors, but haven't gotten one yet.</p>
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
-				<div class="item">
-					<img src="img/tracker.jpg" alt="Camera Tracker">
-					<div class="container">
-						<div class="carousel-caption">
-							<h1></h1>
-							<p></p>
-							<p></p>
+						<!-- COUCHGUY BREWING BLOG -->
+						<div class="col-md-4">
+							<a data-toggle="modal" data-target="#blogModal">
+								<img class="img img-rounded" src="img/couchguybrewingSite.png" alt="Couchguy Brewing Blog">
+								<h3>Couchguy Brewing</h3>
+							</a>
+						</div>
+						<!-- Blog Modal -->
+						<div class="modal fade" id="blogModal" tabindex="-1" role="dialog" aria-labelledby="blogModalLabel">
+							<div class="modal-dialog modal-lg" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										<h4 class="modal-title" id="myModalLabel">Couchguy Brewing Blog</h4>
+									</div>
+									<div class="modal-body">
+										<p>I made a blog for my Homebrewing Advendtures. This blog is more for my personal use to keep track of what I'm working on, but I want it aviable to show others and for others who might find it useful. The site is a blogger site that I custimized it.</p>
+										<img class="img img-responsive img-modal center-block" src="img/brewingblog.png" alt="Couchguy Brewing Blog">
+									</div>
+									<div class="modal-footer">
+										<a href="http://couchguybrewing.com" target="blank"><button type="button" class="btn btn-default">View Site</button></a>
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- BEERS -->
+						<div class="col-md-4">
+							<a data-toggle="modal" data-target="#beersModal">
+								<img class="img img-rounded" src="img/beer.jpg" alt="Beers">
+								<h3>Beers</h3>
+							</a>
+						</div>
+						<!-- Beers Modal -->
+						<div class="modal fade" id="beersModal" tabindex="-1" role="dialog" aria-labelledby="beersModalLabel">
+							<div class="modal-dialog modal-lg" role="document">
+								<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									<h4 class="modal-title" id="myModalLabel">Beers</h4></h4>
+								</div>
+								<div class="modal-body">
+									<p>I started homebrewing in 2014, I got a Mr. Beer Brewing Kit for my College graduation gift and the hobby has just grown from there. I have done about 15 batchs to date.</p>
+									<p>Here are of some of my favoirte beers I have made so far.</p>
+									<img class="center-mobile img-tech" src="img/belaire.png">
+									<img class="center-mobile img-tech" src="img/cider.png">
+									<img class="center-mobile img-tech" src="img/nutbrown.png">
+									<img class="center-mobile img-tech" src="img/wheatale.png">
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- Arrows to move the carousel -->
-			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-				<span class="sr-only">Next</span>
-			</a>
-		</div><!-- /.carousel -->
+		</div>
+	</div>
 	
-	
-		<!-- ===================== Marketing messaging and featurettes ===================== -->
-
-		<div class="container marketing">
-		
-			<!-- Three columns of text below the carousel -->
-			<div class="row">
-				<div class="col-lg-4">
-					<img class="img-circle" src="img/kasslogo.png" alt="Kass Computer Services" style="width: 140px; height: 140px;">
-					<h2>Kass Computer Services</h2>
-					<p>I want to help people purchase their ideal computer while saving money. I will also supply computer repair services.</p>
-					<p><a class="btn btn-default" href="https://blog.dan-kass.com" target="_blank" role="button">View Site &raquo;</a></p>
-				</div><!-- /.col-lg-4 -->
-			
-				<div class="col-lg-4">
-					<img class="img-circle" src="img/chess2.jpg" alt="Chess board picture" style="width: 140px; height: 140px;">
-					<h2>Electronic Chess Board</h2>
-					<p>This was my Senior Design Project that I worked to complete with four other Computer Engineering students. Our goal of the project was to create a chess board that would interface with a chess Engine to allow a game of physical chess to be played with only one person.</p>
-					<p><a class="btn btn-default" href="#chess" role="button">View details &raquo;</a></p>
-				</div><!-- /.col-lg-4 -->
+	<div id="contact" class="sections">
+		<div class="container">
+			<h1 class="text-center">Contact Me</h1>
+			<div class="col-lg-10 col-lg-offset-1">
+				<div class="row text-center" style="font-size:52px; margin-bottom:10px">
+					<a class="fa fa-facebook" target="_blank" href="https://www.facebook.com/kassd2010/"></a>
+					<a class="fa fa-twitter" target="_blank" href="https://twitter.com/dankass59/"></a>
+					<a class="fa fa-linkedin" target="_blank" href="https://linkedin.com/in/dankass/"></a>
+					<a class="fa fa-envelope-o" href="mailto:dan@dan-kass.com"></a>
+				</div>
 				
-				<div class="col-lg-4">
-					<img class="img-circle" src="img/Hangman500.jpg" alt="Hangman" style="width: 140px; height: 140px;">
-					<h2>Hangman</h2>
-					<p>I created a simple hangman game in AngularJS to help learn the technology.</p> 
-					<p><a class="btn btn-default" href="http://hangman.dan-kass.com" target="_blank" role="button">Play Game &raquo;</a></p>
-				</div><!-- /.col-lg-4 -->
-			</div><!-- /.row -->
-		
-		
-			<!-- START THE FEATURETTES -->
-			<hr id="computer" class="featurette-divider">
-			<!-- Image Left -->
-			<div class="row featurette">
-				<div class="col-md-5">
-					<img class="featurette-image img-responsive" src="img/kasslarge.png" alt="Kass Computer Services">
+				<div class="col-xs-12">
+					<img src="img/kasslogo.png" class="img-responsive img-tech center-block">
 				</div>
-				<div class="col-md-7">
-					<h2 class="featurette-heading">Kass Computer Services</h2>
-					<p class="lead">I will do my best to help you find what I feel is the best computer at the best price for the criteria you provide. That criteria includes: what will you be using it for, cost, screen size, touchscreen (or not), desktop, and any other features you prefer. Pricing for computer purchasing help will be $50. Contact me at <a href="mailto:service@dan-kass.com">service@dan-kass.com</a>.</p>
-					<p><a class="btn btn-lg btn-primary" href="https://blog.dan-kass.com" target="_blank" role="button">View Site</a></p>
+				<div class="col-xs-12 text-center">
+					<strong>Daniel Kass, EIT</strong><br>
+					Couchguy Labs<br>
+					Couchguy Brewing<br>
+					Glendale, WI<br>
+					
+				</div>
 				</div>
 			</div>
-			
-			<hr id="studyAbroad" class="featurette-divider">
-			<!-- Image Right -->
-			<div class="row featurette">
-				<div class="col-md-7">
-					<h2 class="featurette-heading">Study Abroad Photo Gallery</h2>
-					<p class="lead">During my sophomore year I had the opportunity to study abroad in Prague, Czech Republic.  It was an amazing time and I was able to travel all around Europe. I went to about a dozen countries in my semester stay in Prague.  This photo gallery is where I uploaded my pictures to share with my friends and family back home while still being over there.</p>
-					<p><a class="btn btn-lg btn-primary" href="http://pictures.dan-kass.com" target="_blank" role="button">View Site</a></p>
-				</div>
-				<div class="col-md-5">
-					<img class="featurette-image img-responsive" src="img/studyAbroad.jpg" alt="Study Abroad Photo Gallery">
-				</div>
-			</div>
-		
-			<hr id="usaControls" class="featurette-divider">
-			<!-- Image Left -->
-			<div class="row featurette">
-				<div class="col-md-5">
-					<img class="featurette-image img-responsive" src="img/usa500.jpg" alt="USA Controls">
-				</div>
-				<div class="col-md-7">
-					<h2 class="featurette-heading">USA Controls Website</h2>
-					<p class="lead">This website was for a local business here in Milwaukee.  The company wanted a simple website that allowed them to upload pictures of the projects that they have worked on.  I though the best, easiest solution for them would be create a Wordpress site and have the project be "blog posts". This way information and pictures could be added with little knowledge of how websites work.</p>
-					<p><a class="btn btn-lg btn-primary" href="http://usacontrols.us" target="_blank" role="button">View Site</a></p>
-				</div>
-			</div>
-		
-			<hr id="chess" class="featurette-divider">
-			<!-- Image Right -->
-			<div class="row featurette">
-				<div class="col-md-7">
-					<h2 class="featurette-heading">Electronic Chess Board</h2>
-					<p class="lead">This was my Senior Design Project that I worked to complete with four other Computer Engineering students. Our goal of the project was to create a chess board that would interface with a chess Engine ("Tom's Simple Chess Program" in our case) to allow a game of physical chess to be played with only one person. The technologies we used in our project were a BeagleBone Black running the chess engine and game logic communicating to an Arduino that controlled the IR sensors and LEDs to indicate and detect moves.</p>
-					<p></p>
-				</div>
-				<div class="col-md-5">
-					<img class="featurette-image img-responsive" src="img/chess500.jpg" alt="Electronic Chess Board">
-				</div>
-			</div>
-			
-			<hr id="tracker" class="featurette-divider">
-			<!-- Image Left -->
-			<div class="row featurette">
-				<div class="col-md-5">
-					<img class="featurette-image img-responsive" src="img/tracker500.jpg" alt="Camera Tracker">
-				</div>
-				<div class="col-md-7">
-					<h2 class="featurette-heading">Camera Tracker</h2>
-					<p class="lead">In a class called Embedded Systems III we had a course long project of using 2 servo motors, a camera, and an ATMega32 board to track a white square on a black piece of paper.  The trick of this project was that the ATMega32 does not have enough memory to hold a full picture to use for comparison. The comparison need to be done on the fly as the picture was being read in.</p>
-					<p></p>
-				</div>
-			</div>
-			
-			<hr id="printrbot" class="featurette-divider">
-			<!-- Image Right -->
-			<div class="row featurette">
-				<div class="col-md-7">
-					<h2 class="featurette-heading">PrintrBot Simple Metal</h2>
-					<p class="lead">I used my graduation money to buy this Printrbot Simple Metal. I have wanted a 3D printer since high school. My senior year my engineering class was able to get a Makerbot (the original one). The printer has many uses: printing trinkets, printing items to improve itself, and printing useful products. Take a look at some of the items I have printed already.</p>
-					<p></p>		 
-				</div>
-				<div class="col-md-5">
-					<img class="featurette-image img-responsive" src="img/printrbot500.jpg" alt="Printr Bot Simple">
-				</div>
-			</div>
-		
-			<hr id="hangman" class="featurette-divider">
-			<!-- Image Left -->
-			<div class="row featurette">
-				<div class="col-md-5">
-					<img class="featurette-image img-responsive" src="img/Hangman500.jpg" alt="Hangman">
-				</div>
-				<div class="col-md-7">
-					<h2 class="featurette-heading">Hangman</h2>
-					<p class="lead">I created a Hangman game to help with my understanding and learning of AngularJS.  AngularJS is being use in part of a project I have been working on at work.  I wanted to go through some tutorials on Angular and I decided to use what I learned to see if I could make a simple game. I hope you enjoy playing around with it.</p>
-					<p><a class="btn btn-lg btn-primary" href="http://hangman.dan-kass.com" target="_blank"role="button">Play Game</a></p>
-				</div>
-			</div>
-			
-			<hr id="couchguy" class="featurette-divider">
-			<!-- Image Right -->
-			<div class="row featurette">
-				<div class="col-md-7">
-					<h2 class="featurette-heading">Couchguy Brewing</h2>
-					<p class="lead">I have started to home brew my own beer.  I decided to create a blog to show off my pictures and beers that I create. Take a look at the site, its a simple blog and easy to set up for anyone.</p>
-					<p><a class="btn btn-lg btn-primary" href="http://www.couchguybrewing.com" role="button" target="_blank">View Blog</a></p>		 
-				</div>
-				<div class="col-md-5">
-					<img class="featurette-image img-responsive" src="img/couchguy.jpg" alt="CouchguyBrewing">
-				</div>
-			</div>
-			
-			<hr id="skylark" class="featurette-divider">
-			<!-- Image Left -->
-			<div class="row featurette">
-				<div class="col-md-5">
-					<img class="featurette-image img-responsive" src="img/skylark500.jpg" alt="CouchguyBrewing">
-				</div>
-				<div class="col-md-7">
-					<h2 class="featurette-heading">Skylark Vending</h2>
-					<p class="lead">Skylark Vending is a vending service company located in Milwaukee, WI run by my father and grandfather.  My cousin created the site a couple years ago and passed the maintance and minor updates along to me.</p>
-					<p><a class="btn btn-lg btn-primary" href="http://skylarkvending.com" role="button" target="_blank">View Site</a>				</p>		 
-				</div>
-			</div>
-			<hr class="featurette-divider">
-			<!-- /END THE FEATURETTES -->
-	  
-			<!-- ===================== About ===================== -->
-			<div id="about" class="row featurette">
-				<div class="col-md-7">
-					<h2 class="featurette-heading">About Me</h2>
-					<p>My name is Daniel Kass. I have a degree in Computer Engineering from the Milwaukee School of Engineering. Currently I work for CBRE|ESI as a Applications Development Engineer.</p>
-					<address>
-						<strong>Daniel Kass, EIT</strong><br>
-						Bachelors of Science in Computer Engineering<br />
-						<a href="http://www.linkedin.com/in/dankass" target="_blank">Linkedin Profile</a><br />
-						<a href="mailto:#">dan@dan-kass.com</a>
-					</address>
-				</div>
-				<div class="col-md-5">
-					<img class="img-responsive" src="img/kass.jpg" alt="Daniel Kass" />
-				</div>
-			</div>
-		
-			<hr class="featurette-divider">
-			<!-- /end of About -->
-	  	  
-			<!-- ===================== FOOTER ===================== -->
-			<footer <!--Maybe Make this sticky-->
-				<p class="pull-right"><a href="#">Back to top</a></p>
-				<p>&copy; <span id="year"></span> Daniel Kass.</p>
-			</footer>
-	  
-		</div><!-- /.container -->
+		</div>
+	</div>
+	
+	<!-- FOOTER -->
+	<footer>
+		<div class="col-sm-1 pull-right">
+			<p><a href="#">Back to top</a></p>
+		</div>
+		<div class="col-sm-10 col-sm-offset-1">
+			<p class="text-center">&copy; <span id="copyYear"></span> All Rights Reserved <a href="mailto:dan@dan-kass.com">Daniel Kass</a></p>
+		</div>
+	</footer>
 
-		<!-- ===================== Bootstrap core JavaScript ===================== -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-		<script>
-			$("#year").html(new Date().getFullYear());
-		</script>
-	</body>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-54042509-5', 'auto');
+        ga('send', 'pageview');
+	</script>
+	<script>
+		//Bootstrap scroll setting.
+		var offset = 200;
+		$('.navbar li a').click(function(event) {
+			event.preventDefault();
+			$($(this).attr('href'))[0].scrollIntoView();
+			scrollBy(0, -offset);
+		});
+		
+		//gets the current year for the copyright date
+		$(document).ready(function() {
+			var now = new Date();
+			$("#copyYear").text(now.getFullYear());
+		});
+    </script>
+  </body>
 </html>
+	
+	
+	
+	
+	
+	
+	
+	<!--
+	
+	<div class="container marketing">
+
+
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="img/kasslogo.png" alt="Kass Computer Services" style="width: 140px; height: 140px;">
+          <h2>Kass Computer Services</h2>
+          <p>I want to help people purchase their ideal computer while saving money. I will also supply computer repair services.</p>
+          <p><a class="btn btn-default" href="http://blog.dan-kass.com" target="_blank" role="button">View Site &raquo;</a></p>
+        </div>
+     
+        <div class="col-lg-4">
+          <img class="img-circle" src="img/chess2.jpg" alt="Chess board picture" style="width: 140px; height: 140px;">
+          <h2>Electronic Chess Board</h2>
+          <p>This was my Senior Design Project that I worked to complete with four other Computer Engineering students. Our goal of the project was to create a chess board that would interface with a chess Engine to allow a game of physical chess to be played with only one person.</p>
+          <p><a class="btn btn-default" href="#chess" role="button">View details &raquo;</a></p>
+        </div>
+        
+        <div class="col-lg-4">
+          <img class="img-circle" src="img/Hangman500.jpg" alt="Hangman" style="width: 140px; height: 140px;">
+          <h2>Hangman</h2>
+          <p>I created a simple hangman game in AngularJS to help learn the technology.</p> refrigeration
+          <p><a class="btn btn-default" href="http://hangman.dan-kass.com" target="_blank" role="button">Play Game &raquo;</a></p>
+        </div>
+      </div>
+	  <hr id="basicbookblog" class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="img/basicbookblog500.jpg" alt="Basic Book Blog">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Basic Book Blog</h2>
+          <p class="lead">My fianc&eacute; was using blogger to host her book review blog, but she wanted something that was easy to use and look professional. I worked on transferring all of her post to Ghost a new blogging platform powered by NodeJs. The site now runs on an AWS server with its own domain name. Since we upgraded her blog the number of Advanced Reader Copies she has recived has gone way up!</p>
+          <p><a class="btn btn-lg btn-primary" href="http://basicbookblog.com" target="_blank" role="button">View Site</a></p>
+        </div>
+      </div>
+      <hr id="febcoinc" class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Febco Inc.</h2>
+          <p class="lead">This website was for a local refrigeration business here in Milwaukee. The company wanted a simple website to display some of the proejets and have a web presence. I create a simple single page site for them.</p>
+          <p><a class="btn btn-lg btn-primary" href="http://www.febcoinc.net/" target="_blank" role="button">View Site</a></p>
+	</div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="img/febco500.jpg" alt="Febco Inc">
+        </div>
+      </div>
+
+      <hr id="computer" class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="img/kasslarge.png" alt="Kass Computer Services">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Kass Computer Services</h2>
+          <p class="lead">I will do my best to help you find what I feel is the best computer at the best price for the criteria you provide. That criteria includes: what will you be using it for, cost, screen size, touchscreen (or not), desktop, and any other features you prefer. Pricing for computer purchasing help will be $50. Contact me at <a href="mailto:service@dan-kass.com">service@dan-kass.com</a>.</p>
+        </div>
+      </div>
+      <hr id="studyAbroad" class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Study Abroad Photo Gallery</h2>
+          <p class="lead">During my sophomore year I had the opportunity to study abroad in Prague, Czech Republic.  It was an amazing time and I was able to travel all around Europe. I went to about a dozen countries in my semester stay in Prague.  This photo gallery is where I uploaded my pictures to share with my friends and family back home while still being over there.</p>
+          <p><a class="btn btn-lg btn-primary" href="http://pictures.dan-kass.com" target="_blank" role="button">View Site</a></p>
+	</div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="img/studyAbroad.jpg" alt="Study Abroad Photo Gallery">
+        </div>
+      </div>
+
+      <hr id="usaControls" class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="img/usa500.jpg" alt="USA Controls">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">USA Controls Website</h2>
+          <p class="lead">This website was for a local business here in Milwaukee.  The company wanted a simple website that allowed them to upload pictures of the projects that they have worked on.  I though the best, easiest solution for them would be create a Wordpress site and have the project be "blog posts". This way information and pictures could be added with little knowledge of how websites work.</p>
+          <p><a class="btn btn-lg btn-primary" href="http://usacontrols.us" target="_blank" role="button">View Site</a></p>
+        </div>
+      </div>
+
+      <hr id="chess" class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Electronic Chess Board</h2>
+          <p class="lead">This was my Senior Design Project that I worked to complete with four other Computer Engineering students. Our goal of the project was to create a chess board that would interface with a chess Engine ("Tom's Simple Chess Program" in our case) to allow a game of physical chess to be played with only one person. The technologies we used in our project were a BeagleBone Black running the chess engine and game logic communicating to an Arduino that controlled the IR sensors and LEDs to indicate and detect moves.</p>
+          <p></p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="img/chess500.jpg" alt="Electronic Chess Board">
+        </div>
+      </div>
+      
+      <hr id="tracker" class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="img/tracker500.jpg" alt="Camera Tracker">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Camera Tracker</h2>
+          <p class="lead">In a class called Embedded Systems III we had a course long project of using 2 servo motors, a camera, and an ATMega32 board to track a white square on a black piece of paper.  The trick of this project was that the ATMega32 does not have enough memory to hold a full picture to use for comparison. The comparison need to be done on the fly as the picture was being read in.</p>
+          <p></p>
+        </div>
+      </div>
+      
+      <hr id="printrbot" class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">PrintrBot Simple Metal</h2>
+          <p class="lead">I used my graduation money to buy this Printrbot Simple Metal. I have wanted a 3D printer since high school. My senior year my engineering class was able to get a Makerbot (the original one). The printer has many uses: printing trinkets, printing items to improve itself, and printing useful products. Take a look at some of the items I have printed already.</p>
+          <p></p>		 
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="img/printrbot500.jpg" alt="Printr Bot Simple">
+        </div>
+      </div>
+
+      <hr id="hangman" class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="img/Hangman500.jpg" alt="Hangman">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Hangman</h2>
+          <p class="lead">I created a Hangman game to help with my understanding and learning of AngularJS.  AngularJS is being use in part of a project I have been working on at work.  I wanted to go through some tutorials on Angular and I decided to use what I learned to see if I could make a simple game. I hope you enjoy playing around with it.</p>
+          <p><a class="btn btn-lg btn-primary" href="http://hangman.dan-kass.com" target="_blank"role="button">Play Game</a></p>
+        </div>
+      </div>
+	  
+      <hr id="couchguy" class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Couchguy Brewing</h2>
+          <p class="lead">I have started to home brew my own beer.  I decided to create a blog to show off my pictures and beers that I create. Take a look at the site, its a simple blog and easy to set up for anyone.</p>
+          <p><a class="btn btn-lg btn-primary" href="http://www.couchguybrewing.com" role="button" target="_blank">View Blog</a>
+		  </p>		 
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="img/couchguy.jpg" alt="CouchguyBrewing">
+        </div>
+      </div>
+      
+      <hr id="skylark" class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="img/skylark500.jpg" alt="CouchguyBrewing">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Skylark Vending</h2>
+          <p class="lead">Skylark Vending is a vending service company located in Milwaukee, WI run by my father and grandfather.  My cousin created the site a couple years ago and passed the maintance and minor updates along to me.</p>
+          <p><a class="btn btn-lg btn-primary" href="http://skylarkvending.com" role="button" target="_blank">View Site</a>
+		  </p>		 
+        </div>
+      </div>
+	  
+
+	  <hr class="featurette-divider">
+
+	  <div id="aboutme" class="row featurette">
+		<div class="col-md-7">
+			<h2 class="featurette-heading">About Me</h2>
+			<p>My name is Daniel Kass. I have a degree in Computer Engineering from the Milwaukee School of Engineering. Currently I work for CBRE|ESI as a Applications Development Engineer.</p>
+			<address>
+				<strong>Daniel Kass, EIT</strong><br>
+				Bachelors of Science in Computer Engineering<br />
+				<a href="http://www.linkedin.com/in/dankass" target="_blank">Linkedin Profile</a><br />
+				<a href="mailto:#">dan@dan-kass.com</a>
+			</address>
+		</div>
+		<div class="col-md-5">
+			<img class="img-responsive" src="img/kass.jpg" alt="Daniel Kass" />
+		</div>
+	  </div>
+	  
+	  <hr class="featurette-divider">
+
+		</div> 
+
+-->		
+	
